@@ -47,7 +47,7 @@ const QuantumTheory: React.FC = () => {
           </h2>
           <p className="section-description">
             Quantum mechanics is the foundation of modern physics, describing the wonderful phenomena in the microscopic world.
-            Let's understand these concepts thatchallenge common sense together.
+            Let's understand these concepts that challenge common sense together.
           </p>
         </motion.div>
 
@@ -127,7 +127,7 @@ const QuantumTheory: React.FC = () => {
             <h3>Why is the Quantum World So Strange?</h3>
             <p>
               In the macroscopic world, we're used to determinism: an object is either here or there;
-              either alive or dead. But at the quantum scale, these common senses are completelychallenge common sense.
+              either alive or dead. But at the quantum scale, these common senses are completely challenge common sense.
             </p>
             <p>
               Quantum mechanics tells us that before observation, particles can exist in multiple positions simultaneously,
