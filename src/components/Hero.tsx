@@ -47,7 +47,7 @@ const Hero: React.FC = () => {
             transition={{ duration: 0.8, delay: 0.8 }}
           >
             <Atom className="badge-icon" />
-            <span>量子物理</span>
+            <span>Quantum Physics</span>
           </motion.div>
 
           <motion.h1
@@ -56,8 +56,8 @@ const Hero: React.FC = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 1 }}
           >
-            <span className="title-main">薛定谔的猫</span>
-            <span className="title-sub">量子纠缠的奇妙世界</span>
+            <span className="title-main">Schrödinger's Cat</span>
+            <span className="title-sub">The Wonderful World of Quantum Entanglement</span>
           </motion.h1>
 
           <motion.p
@@ -66,8 +66,8 @@ const Hero: React.FC = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 1.5 }}
           >
-            探索量子物理中最著名的思想实验，理解叠加态、观测效应和量子纠缠的奥秘。
-            在这里，现实与可能性交织，观察者与被观察者相互影响。
+            Explore the most famous thought experiment in quantum physics, understanding the mysteries of superposition, observation effects, and quantum entanglement.
+            Here, reality and possibility intertwine, and the observer and the observed influence each other.
           </motion.p>
 
           <motion.div
@@ -76,14 +76,14 @@ const Hero: React.FC = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 2 }}
           >
-            <button className="quantum-btn primary" onClick={scrollToNext}>
-              <Zap className="btn-icon" />
-              开始探索
-            </button>
-            <button className="quantum-btn secondary" onClick={() => document.getElementById('interactive-demo')?.scrollIntoView({ behavior: 'smooth' })}>
-              <Eye className="btn-icon" />
-              互动演示
-            </button>
+                     <button className="quantum-btn primary" onClick={scrollToNext}>
+           <Zap className="btn-icon" />
+           Start Exploring
+         </button>
+         <button className="quantum-btn secondary" onClick={() => document.getElementById('interactive-demo')?.scrollIntoView({ behavior: 'smooth' })}>
+           <Eye className="btn-icon" />
+           Interactive Demo
+         </button>
           </motion.div>
 
           <motion.div

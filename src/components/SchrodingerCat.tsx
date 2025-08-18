@@ -37,11 +37,11 @@ const SchrodingerCat: React.FC = () => {
   const getCatDescription = () => {
     switch (catState) {
       case 'alive':
-        return '猫还活着！观测行为使量子态坍缩到了"活着"的状态。'
+        return 'The cat is alive! The observation caused the quantum state to collapse to the "alive" state.'
       case 'dead':
-        return '猫已经死亡。观测行为使量子态坍缩到了"死亡"的状态。'
+        return 'The cat is dead. The observation caused the quantum state to collapse to the "dead" state.'
       default:
-        return '在观测之前，猫同时处于活着和死亡的叠加态中。这是量子力学的核心概念。'
+        return 'Before observation, the cat exists in a superposition of being both alive and dead. This is a core concept of quantum mechanics.'
     }
   }
 
@@ -56,12 +56,12 @@ const SchrodingerCat: React.FC = () => {
           viewport={{ once: true }}
         >
           <h2 className="section-title">
-            <span className="quantum-text">薛定谔的猫</span>
-            <span className="title-sub">量子叠加的思想实验</span>
+            <span className="quantum-text">Schrödinger's Cat</span>
+            <span className="title-sub">The Thought Experiment of Quantum Superposition</span>
           </h2>
           <p className="section-description">
-            1935年，奥地利物理学家埃尔温·薛定谔提出了这个著名的思想实验，
-            用来解释量子叠加态的荒谬性。让我们一起来体验这个实验。
+            In 1935, Austrian physicist Erwin Schrödinger proposed this famous thought experiment
+            to explain the absurdity of quantum superposition. Let's experience this experiment together.
           </p>
         </motion.div>
 
@@ -91,7 +91,7 @@ const SchrodingerCat: React.FC = () => {
                         <div className="quantum-wave"></div>
                         <div className="quantum-wave"></div>
                       </div>
-                      <span className="status-text">叠加态</span>
+                      <span className="status-text">Superposition</span>
                     </motion.div>
                   ) : (
                     <motion.div
@@ -104,13 +104,13 @@ const SchrodingerCat: React.FC = () => {
                     >
                       {getCatIcon()}
                       <span className="status-text">
-                        {catState === 'alive' ? '活着' : '死亡'}
+                        {catState === 'alive' ? 'Alive' : 'Dead'}
                       </span>
                     </motion.div>
                   )}
                 </AnimatePresence>
               </div>
-              <div className="box-label">量子盒子</div>
+              <div className="box-label">Quantum Box</div>
             </div>
           </motion.div>
 
@@ -122,10 +122,10 @@ const SchrodingerCat: React.FC = () => {
             viewport={{ once: true }}
           >
             <div className="control-panel quantum-card">
-              <h3>实验控制台</h3>
+              <h3>Experiment Console</h3>
               <p className="experiment-description">
-                点击"观测"按钮来观察猫的状态。在观测之前，猫处于生死叠加态；
-                观测行为会使量子态坍缩到其中一个确定状态。
+                Click the "Observe" button to observe the cat's state. Before observation, the cat exists in a life-death superposition;
+                the act of observation will cause the quantum state to collapse to one of the definite states.
               </p>
               
               <div className="control-buttons">
@@ -135,7 +135,7 @@ const SchrodingerCat: React.FC = () => {
                   disabled={isObserved}
                 >
                   <Eye className="btn-icon" />
-                  {isObserved ? '已观测' : '观测'}
+                  {isObserved ? 'Observed' : 'Observe'}
                 </button>
                 
                 <button
@@ -143,7 +143,7 @@ const SchrodingerCat: React.FC = () => {
                   onClick={resetExperiment}
                 >
                   <Zap className="btn-icon" />
-                  重置实验
+                  Reset Experiment
                 </button>
               </div>
 

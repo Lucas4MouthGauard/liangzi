@@ -7,26 +7,26 @@ const QuantumTheory: React.FC = () => {
   const concepts = [
     {
       icon: <Atom />,
-      title: '量子叠加',
-      description: '量子系统可以同时存在于多个状态的叠加中，直到被观测时才会坍缩到其中一个确定状态。',
+      title: 'Quantum Superposition',
+      description: 'Quantum systems can exist in superposition of multiple states simultaneously, until observed and collapsed to one definite state.',
       color: 'var(--quantum-primary)'
     },
     {
       icon: <Eye />,
-      title: '观测效应',
-      description: '观测行为本身会影响量子系统的状态，这就是著名的"观测者效应"。',
+      title: 'Observer Effect',
+      description: 'The act of observation itself affects the state of quantum systems, known as the "observer effect."',
       color: 'var(--quantum-secondary)'
     },
     {
       icon: <Zap />,
-      title: '不确定性原理',
-      description: '海森堡不确定性原理表明，我们无法同时精确测量粒子的位置和动量。',
+      title: 'Uncertainty Principle',
+      description: 'Heisenberg\'s uncertainty principle states that we cannot simultaneously measure a particle\'s position and momentum with precision.',
       color: 'var(--quantum-accent)'
     },
     {
       icon: <Brain />,
-      title: '量子纠缠',
-      description: '两个或多个粒子可以形成纠缠态，无论相距多远，它们的状态都会瞬间关联。',
+      title: 'Quantum Entanglement',
+      description: 'Two or more particles can form entangled states, where their states become instantly correlated regardless of distance.',
       color: 'var(--quantum-primary)'
     }
   ]
@@ -42,12 +42,12 @@ const QuantumTheory: React.FC = () => {
           viewport={{ once: true }}
         >
           <h2 className="section-title">
-            <span className="quantum-text">量子理论</span>
-            <span className="title-sub">基础概念</span>
+            <span className="quantum-text">Quantum Theory</span>
+            <span className="title-sub">Fundamental Concepts</span>
           </h2>
           <p className="section-description">
-            量子力学是现代物理学的基础，它描述了微观世界中的奇妙现象。
-            让我们一起来了解这些颠覆常识的概念。
+            Quantum mechanics is the foundation of modern physics, describing the wonderful phenomena in the microscopic world.
+            Let's understand these concepts that颠覆常识 together.
           </p>
         </motion.div>
 
@@ -124,18 +124,18 @@ const QuantumTheory: React.FC = () => {
           viewport={{ once: true }}
         >
           <div className="explanation-content">
-            <h3>为什么量子世界如此奇怪？</h3>
+            <h3>Why is the Quantum World So Strange?</h3>
             <p>
-              在宏观世界中，我们习惯了确定性：一个物体要么在这里，要么在那里；
-              要么是活的，要么是死的。但在量子尺度上，这些常识被彻底颠覆了。
+              In the macroscopic world, we're used to determinism: an object is either here or there;
+              either alive or dead. But at the quantum scale, these common senses are completely颠覆常识.
             </p>
             <p>
-              量子力学告诉我们，在观测之前，粒子可以同时存在于多个位置，
-              可以同时处于多个状态。这种"叠加态"是量子世界的核心特征。
+              Quantum mechanics tells us that before observation, particles can exist in multiple positions simultaneously,
+              can be in multiple states at the same time. This "superposition" is the core feature of the quantum world.
             </p>
             <div className="quantum-formula">
               <span>|ψ⟩ = α|0⟩ + β|1⟩</span>
-              <small>量子叠加态的数学表示</small>
+              <small>Mathematical representation of quantum superposition</small>
             </div>
           </div>
         </motion.div>

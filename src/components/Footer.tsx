@@ -17,25 +17,25 @@ const Footer: React.FC = () => {
           viewport={{ once: true }}
         >
           <div className="footer-section">
-                      <div className="footer-logo">
-            <Zap className="logo-icon" />
-            <span className="logo-text">PumpCat</span>
-          </div>
-            <p className="footer-description">
-              探索量子物理的奇妙世界，理解薛定谔的猫、量子纠缠等深奥概念。
-              让科学变得有趣而易于理解。
-            </p>
+            <div className="footer-logo">
+              <Zap className="logo-icon" />
+              <span className="logo-text">PumpCat</span>
+            </div>
+            <div className="footer-description">
+              <h3 className="description-title">Exploring the Wonderful World of Quantum Physics</h3>
+              <p className="description-text">
+                Understanding profound concepts like Schrödinger's Cat, quantum entanglement, and more.<br/>
+                Making science fun and easy to understand.
+              </p>
+              <div className="description-features">
+                <span className="feature-tag">Quantum Superposition</span>
+                <span className="feature-tag">Observer Effect</span>
+                <span className="feature-tag">Non-locality</span>
+              </div>
+            </div>
           </div>
 
-          <div className="footer-section">
-            <h4>快速链接</h4>
-            <ul className="footer-links">
-              <li><a href="#schrodinger-cat">薛定谔的猫</a></li>
-              <li><a href="#entanglement">量子纠缠</a></li>
-              <li><a href="#quantum-theory">量子理论</a></li>
-              <li><a href="#interactive-demo">互动演示</a></li>
-            </ul>
-          </div>
+
 
 
         </motion.div>

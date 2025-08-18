@@ -44,12 +44,12 @@ const Entanglement: React.FC = () => {
           viewport={{ once: true }}
         >
           <h2 className="section-title">
-            <span className="quantum-text">量子纠缠</span>
-            <span className="title-sub">超越时空的神秘连接</span>
+            <span className="quantum-text">Quantum Entanglement</span>
+            <span className="title-sub">Mysterious Connection Beyond Space and Time</span>
           </h2>
           <p className="section-description">
-            量子纠缠是量子力学中最令人困惑的现象之一。两个或多个粒子可以形成纠缠态，
-            无论相距多远，它们的状态都会瞬间关联。爱因斯坦称之为"幽灵般的超距作用"。
+            Quantum entanglement is one of the most puzzling phenomena in quantum mechanics. Two or more particles can form an entangled state,
+            and regardless of how far apart they are, their states become instantly correlated. Einstein called this "spooky action at a distance."
           </p>
         </motion.div>
 
@@ -71,12 +71,12 @@ const Entanglement: React.FC = () => {
                     <div className="ring ring-3"></div>
                   </div>
                 </div>
-                <div className="particle-label">粒子A</div>
-                <div className="particle-state">|↑⟩</div>
-                <div className="particle-info">
-                  <span>自旋: +1/2</span>
-                  <span>位置: 地球</span>
-                </div>
+                              <div className="particle-label">Particle A</div>
+              <div className="particle-state">|↑⟩</div>
+              <div className="particle-info">
+                <span>Spin: +1/2</span>
+                <span>Location: Earth</span>
+              </div>
               </div>
               
               <div className="entanglement-connection">
@@ -93,8 +93,8 @@ const Entanglement: React.FC = () => {
                   </div>
                 </div>
                 <div className="connection-info">
-                  <div className="distance">距离: 1光年</div>
-                  <div className="entanglement-type">贝尔态 |ψ⁻⟩</div>
+                                  <div className="distance">Distance: 1 Light Year</div>
+                <div className="entanglement-type">Bell State |ψ⁻⟩</div>
                 </div>
               </div>
               
@@ -107,21 +107,21 @@ const Entanglement: React.FC = () => {
                     <div className="ring ring-3"></div>
                   </div>
                 </div>
-                <div className="particle-label">粒子B</div>
-                <div className="particle-state">|↓⟩</div>
-                <div className="particle-info">
-                  <span>自旋: -1/2</span>
-                  <span>位置: 半人马座</span>
-                </div>
+                              <div className="particle-label">Particle B</div>
+              <div className="particle-state">|↓⟩</div>
+              <div className="particle-info">
+                <span>Spin: -1/2</span>
+                <span>Location: Centaurus</span>
+              </div>
               </div>
             </div>
             
             <div className="demo-description">
-              <h4>量子纠缠现象</h4>
-              <p>两个粒子形成纠缠态后，无论相距多远，测量一个粒子的状态会瞬间决定另一个粒子的状态。</p>
+              <h4>Quantum Entanglement Phenomenon</h4>
+              <p>After two particles form an entangled state, regardless of how far apart they are, measuring the state of one particle will instantly determine the state of the other particle.</p>
               <div className="quantum-formula">
                 <span>|ψ⁻⟩ = (|↑↓⟩ - |↓↑⟩)/√2</span>
-                <small>贝尔态：完美的反相关纠缠</small>
+                <small>Bell State: Perfect Anti-correlated Entanglement</small>
               </div>
             </div>
           </motion.div>
@@ -134,43 +134,43 @@ const Entanglement: React.FC = () => {
             viewport={{ once: true }}
           >
             <div className="control-panel quantum-card">
-              <h3>交互式纠缠演示</h3>
+              <h3>Interactive Entanglement Demo</h3>
               <p>
-                体验量子纠缠的神奇效应。点击测量按钮观察粒子状态的瞬间关联，
-                理解非局域性和量子测量的奥秘。
+                Experience the magical effects of quantum entanglement. Click the measurement buttons to observe the instant correlation of particle states,
+                understanding the mysteries of non-locality and quantum measurement.
               </p>
               
               <div className="measurement-controls">
                 <div className="control-group">
-                  <h4>测量控制</h4>
+                  <h4>Measurement Control</h4>
                   <div className="measurement-buttons">
                     <button className="quantum-btn primary">
                       <Zap className="btn-icon" />
-                      测量粒子A
+                      Measure Particle A
                     </button>
                     <button className="quantum-btn secondary">
                       <Zap className="btn-icon" />
-                      测量粒子B
+                      Measure Particle B
                     </button>
                     <button className="quantum-btn accent">
                       <Zap className="btn-icon" />
-                      同时测量
+                      Measure Both
                     </button>
                   </div>
                 </div>
 
                 <div className="control-group">
-                  <h4>纠缠参数</h4>
+                  <h4>Entanglement Parameters</h4>
                   <div className="parameter-controls">
                     <div className="parameter">
-                      <label>纠缠强度</label>
+                      <label>Entanglement Strength</label>
                       <div className="slider-container">
                         <input type="range" min="0" max="100" defaultValue="100" className="entanglement-slider" />
                         <span className="slider-value">100%</span>
                       </div>
                     </div>
                     <div className="parameter">
-                      <label>测量精度</label>
+                      <label>Measurement Precision</label>
                       <div className="slider-container">
                         <input type="range" min="50" max="100" defaultValue="95" className="precision-slider" />
                         <span className="slider-value">95%</span>
@@ -181,23 +181,23 @@ const Entanglement: React.FC = () => {
               </div>
 
               <div className="entanglement-info">
-                <h4>纠缠特性详解</h4>
+                <h4>Entanglement Characteristics</h4>
                 <div className="info-grid">
                   <div className="info-item">
-                    <h5>非局域性</h5>
-                    <p>影响瞬间传递，超越光速限制</p>
+                    <h5>Non-locality</h5>
+                    <p>Instant influence transmission, beyond light speed limits</p>
                   </div>
                   <div className="info-item">
-                    <h5>不可克隆</h5>
-                    <p>无法复制未知的量子态</p>
+                    <h5>No-cloning</h5>
+                    <p>Cannot copy unknown quantum states</p>
                   </div>
                   <div className="info-item">
-                    <h5>测量坍缩</h5>
-                    <p>观测行为改变系统状态</p>
+                    <h5>Measurement Collapse</h5>
+                    <p>Observation behavior changes system state</p>
                   </div>
                   <div className="info-item">
-                    <h5>贝尔不等式</h5>
-                    <p>违反经典物理的数学证明</p>
+                    <h5>Bell Inequality</h5>
+                    <p>Mathematical proof violating classical physics</p>
                   </div>
                 </div>
               </div>

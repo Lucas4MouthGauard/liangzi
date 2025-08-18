@@ -32,24 +32,24 @@ const Header: React.FC = () => {
         </div>
 
                   <nav className={`nav ${isMenuOpen ? 'open' : ''}`}>
-            <ul className="nav-list">
-              <li><button onClick={() => scrollToSection('schrodinger-cat')}>薛定谔的猫</button></li>
-              <li><button onClick={() => scrollToSection('entanglement')}>量子纠缠</button></li>
-              <li><button onClick={() => scrollToSection('quantum-theory')}>量子理论</button></li>
-              <li><button onClick={() => scrollToSection('interactive-demo')}>互动演示</button></li>
-              <li>
-                <a 
-                  href="https://x.com/Pump_Cat_meme" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="nav-x-button"
-                >
-                  <svg className="x-icon" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.56h1.833L7.084 4.126H5.117z"/>
-                  </svg>
-                </a>
-              </li>
-            </ul>
+                      <ul className="nav-list">
+            <li><button onClick={() => scrollToSection('schrodinger-cat')}>Schrödinger's Cat</button></li>
+            <li><button onClick={() => scrollToSection('entanglement')}>Quantum Entanglement</button></li>
+            <li><button onClick={() => scrollToSection('quantum-theory')}>Quantum Theory</button></li>
+            <li><button onClick={() => scrollToSection('interactive-demo')}>Interactive Demo</button></li>
+            <li>
+              <a 
+                href="https://x.com/Pump_Cat_meme" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="nav-x-button"
+              >
+                <svg className="x-icon" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.56h1.833L7.084 4.126H5.117z"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
           </nav>
 
         <button 

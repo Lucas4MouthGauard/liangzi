@@ -7,9 +7,12 @@
 
 .footer-content {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: 1fr;
   gap: 40px;
   margin-bottom: 60px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .footer-section {
@@ -47,9 +50,46 @@
 }
 
 .footer-description {
-  color: rgba(255, 255, 255, 0.7);
+  margin-top: 20px;
+}
+
+.description-title {
+  color: var(--quantum-primary);
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  font-family: 'Orbitron', monospace;
+}
+
+.description-text {
+  color: rgba(255, 255, 255, 0.8);
   line-height: 1.6;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+}
+
+.description-features {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.feature-tag {
+  background: linear-gradient(135deg, var(--quantum-primary), var(--quantum-secondary));
+  color: var(--quantum-darker);
+  padding: 6px 12px;
+  border-radius: 15px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+.feature-tag:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 212, 255, 0.3);
 }
 
 .footer-section h4 {
