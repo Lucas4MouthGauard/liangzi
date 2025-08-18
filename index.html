@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/PumpCat.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="薛定谔的猫量子纠缠主题网站 - 探索量子物理的奇妙世界" />
+    <meta name="keywords" content="量子物理,薛定谔的猫,量子纠缠,物理学,科学" />
+    <title>薛定谔的猫 | 量子纠缠的奇妙世界</title>
+    
+    <!-- 预加载字体 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- 量子物理主题的CSS变量 -->
+    <style>
+      :root {
+        --quantum-primary: #00d4ff;
+        --quantum-secondary: #ff00ff;
+        --quantum-accent: #ffff00;
+        --quantum-dark: #0a0a0a;
+        --quantum-darker: #000000;
+        --quantum-light: #ffffff;
+        --quantum-glow: 0 0 20px rgba(0, 212, 255, 0.5);
+        --quantum-gradient: linear-gradient(135deg, #00d4ff, #ff00ff, #ffff00);
+      }
+      
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      body {
+        font-family: 'Inter', sans-serif;
+        background: var(--quantum-dark);
+        color: var(--quantum-light);
+        overflow-x: hidden;
+      }
+      
+      .quantum-bg {
+        background: radial-gradient(circle at center, #1a1a1a 0%, #000000 100%);
+        min-height: 100vh;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root" class="quantum-bg"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

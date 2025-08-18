@@ -1,0 +1,298 @@
+.quantum-theory {
+  padding: 100px 0;
+  position: relative;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.section-title {
+  margin-bottom: 20px;
+}
+
+.section-title .quantum-text {
+  display: block;
+  font-family: 'Orbitron', monospace;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.section-title .title-sub {
+  display: block;
+  font-size: 1.2rem;
+  color: var(--quantum-secondary);
+  opacity: 0.8;
+}
+
+.section-description {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.8);
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.concepts-showcase {
+  margin-bottom: 80px;
+}
+
+.concepts-timeline {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.concepts-timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 2px;
+  height: 100%;
+  background: var(--quantum-gradient);
+  transform: translateX(-50%);
+  opacity: 0.3;
+}
+
+.concepts-timeline-item {
+  position: relative;
+  margin-bottom: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.concepts-timeline-item:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.concepts-timeline-item:nth-child(even) .concept-content {
+  margin-right: 60px;
+  margin-left: 0;
+  text-align: right;
+}
+
+.concepts-timeline-item:nth-child(odd) .concept-content {
+  margin-left: 60px;
+  margin-right: 0;
+  text-align: left;
+}
+
+.timeline-marker {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  border: 3px solid;
+  border-radius: 50%;
+  background: var(--quantum-darker);
+  z-index: 2;
+}
+
+.marker-core {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.concept-content {
+  flex: 1;
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  min-height: 200px;
+}
+
+.concept-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  transition: left 0.6s ease;
+}
+
+.concept-card:hover::before {
+  left: 100%;
+}
+
+.concept-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.concept-icon-wrapper {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 28px;
+  flex-shrink: 0;
+}
+
+.concept-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.concept-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: var(--quantum-light);
+}
+
+.concept-description {
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.6;
+  font-size: 0.95rem;
+  margin-bottom: 25px;
+}
+
+.concept-details {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.detail-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.detail-label {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 500;
+}
+
+.importance-bar {
+  width: 120px;
+  height: 6px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.importance-fill {
+  height: 100%;
+  border-radius: 3px;
+  transition: width 0.3s ease;
+}
+
+.difficulty-stars {
+  display: flex;
+  gap: 2px;
+}
+
+.star {
+  font-size: 16px;
+  opacity: 0.3;
+  transition: opacity 0.3s ease;
+}
+
+.star.filled {
+  opacity: 1;
+}
+
+.theory-explanation {
+  background: rgba(0, 212, 255, 0.05);
+  border: 1px solid rgba(0, 212, 255, 0.2);
+  border-radius: 20px;
+  padding: 40px;
+  text-align: center;
+}
+
+.explanation-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: var(--quantum-primary);
+}
+
+.explanation-content p {
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.7;
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+.quantum-formula {
+  margin-top: 30px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+  border: 1px solid var(--quantum-primary);
+}
+
+.quantum-formula span {
+  display: block;
+  font-family: 'Orbitron', monospace;
+  font-size: 1.5rem;
+  color: var(--quantum-accent);
+  margin-bottom: 10px;
+}
+
+.quantum-formula small {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.9rem;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .quantum-theory {
+    padding: 60px 0;
+  }
+
+  .section-title .quantum-text {
+    font-size: 2rem;
+  }
+
+  .concepts-timeline::before {
+    left: 30px;
+  }
+
+  .concepts-timeline-item {
+    flex-direction: column !important;
+    align-items: flex-start;
+    margin-left: 60px;
+  }
+
+  .concepts-timeline-item .concept-content {
+    margin: 0 !important;
+    text-align: left !important;
+    width: 100%;
+  }
+
+  .timeline-marker {
+    left: 30px;
+  }
+
+  .theory-explanation {
+    padding: 30px 20px;
+  }
+
+  .explanation-content h3 {
+    font-size: 1.3rem;
+  }
+}

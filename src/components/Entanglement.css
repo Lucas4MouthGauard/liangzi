@@ -1,0 +1,631 @@
+.entanglement {
+  padding: 100px 0;
+  position: relative;
+}
+
+.entanglement-demo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  margin-bottom: 80px;
+  align-items: center;
+}
+
+.demo-visual {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.entangled-system {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.particle-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  min-width: 200px;
+}
+
+.particle-core {
+  width: 100px;
+  height: 100px;
+  background: var(--quantum-gradient);
+  border-radius: 50%;
+  position: relative;
+  animation: particle-pulse 2s ease-in-out infinite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.particle-core::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  border: 2px solid var(--quantum-primary);
+  border-radius: 50%;
+  opacity: 0.3;
+  animation: particle-aura 3s ease-in-out infinite;
+}
+
+.particle-inner {
+  width: 60px;
+  height: 60px;
+  background: var(--quantum-darker);
+  border-radius: 50%;
+  position: relative;
+  z-index: 2;
+}
+
+.particle-rings {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.ring {
+  position: absolute;
+  border: 2px solid;
+  border-radius: 50%;
+  animation: ring-pulse 4s ease-in-out infinite;
+}
+
+.ring-1 {
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  border-color: var(--quantum-primary);
+  animation-delay: 0s;
+}
+
+.ring-2 {
+  top: -15px;
+  left: -15px;
+  right: -15px;
+  bottom: -15px;
+  border-color: var(--quantum-secondary);
+  animation-delay: 1s;
+}
+
+.ring-3 {
+  top: -25px;
+  left: -25px;
+  right: -25px;
+  bottom: -25px;
+  border-color: var(--quantum-accent);
+  animation-delay: 2s;
+}
+
+@keyframes ring-pulse {
+  0%, 100% { opacity: 0.3; transform: scale(1); }
+  50% { opacity: 0.8; transform: scale(1.1); }
+}
+
+@keyframes particle-pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+@keyframes particle-aura {
+  0%, 100% { transform: scale(1); opacity: 0.3; }
+  50% { transform: scale(1.2); opacity: 0.6; }
+}
+
+.particle-label {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--quantum-primary);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.particle-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  text-align: center;
+}
+
+.particle-info span {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.7);
+  background: rgba(0, 0, 0, 0.3);
+  padding: 4px 8px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.particle-state {
+  font-family: 'Orbitron', monospace;
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--quantum-accent);
+  animation: state-flip 4s ease-in-out infinite;
+}
+
+@keyframes state-flip {
+  0%, 45% { transform: rotateX(0deg); }
+  50%, 95% { transform: rotateX(180deg); }
+  100% { transform: rotateX(0deg); }
+}
+
+.entanglement-connection {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.connection-line {
+  position: relative;
+  width: 150px;
+  height: 4px;
+}
+
+.connection-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+}
+
+.distance {
+  font-size: 14px;
+  color: var(--quantum-secondary);
+  font-weight: 500;
+}
+
+.entanglement-type {
+  font-size: 12px;
+  color: var(--quantum-accent);
+  font-family: 'Orbitron', monospace;
+  background: rgba(255, 255, 0, 0.1);
+  padding: 6px 12px;
+  border-radius: 15px;
+  border: 1px solid var(--quantum-accent);
+}
+
+.line-core {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background: var(--quantum-gradient);
+  border-radius: 2px;
+  transform: translateY(-50%);
+}
+
+.quantum-waves {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.wave {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid var(--quantum-primary);
+  border-radius: 50%;
+  transform: translateY(-50%) scaleX(0);
+  animation: wave-travel 2s ease-out infinite;
+  animation-delay: var(--delay);
+  opacity: 0;
+}
+
+@keyframes wave-travel {
+  0% {
+    transform: translateY(-50%) scaleX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-50%) scaleX(1);
+    opacity: 0;
+  }
+}
+
+.demo-description {
+  text-align: center;
+  padding: 20px;
+  background: rgba(0, 212, 255, 0.1);
+  border-radius: 15px;
+  border: 1px solid rgba(0, 212, 255, 0.3);
+}
+
+.demo-description p {
+  color: var(--quantum-light);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.demo-description h4 {
+  text-align: center;
+  color: var(--quantum-primary);
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.quantum-formula {
+  text-align: center;
+  margin-top: 20px;
+  padding: 15px;
+  background: rgba(255, 255, 0, 0.1);
+  border-radius: 10px;
+  border: 1px solid var(--quantum-accent);
+}
+
+.quantum-formula span {
+  display: block;
+  font-family: 'Orbitron', monospace;
+  font-size: 16px;
+  color: var(--quantum-accent);
+  margin-bottom: 5px;
+}
+
+.quantum-formula small {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.demo-controls {
+  display: flex;
+  flex-direction: column;
+}
+
+.control-panel {
+  padding: 30px;
+}
+
+.control-panel h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: var(--quantum-primary);
+}
+
+.control-panel p {
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.measurement-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.control-group {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 20px;
+}
+
+.control-group:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.control-group h4 {
+  margin-bottom: 15px;
+  color: var(--quantum-primary);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.parameter-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.parameter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.parameter label {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 500;
+}
+
+.slider-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 150px;
+}
+
+.entanglement-slider,
+.precision-slider {
+  flex: 1;
+  height: 6px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+  outline: none;
+  -webkit-appearance: none;
+}
+
+.entanglement-slider::-webkit-slider-thumb,
+.precision-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  background: var(--quantum-primary);
+  border-radius: 50%;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
+}
+
+.slider-value {
+  font-size: 12px;
+  color: var(--quantum-primary);
+  font-weight: 600;
+  min-width: 35px;
+  text-align: right;
+}
+
+.measurement-buttons {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.entanglement-info h4 {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  color: var(--quantum-secondary);
+}
+
+.entanglement-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.entanglement-info li {
+  color: rgba(255, 255, 255, 0.7);
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.entanglement-info li:last-child {
+  border-bottom: none;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.info-item {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.info-item h5 {
+  color: var(--quantum-primary);
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.info-item p {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.4;
+  margin: 0;
+}
+
+.entanglement-examples {
+  margin-bottom: 80px;
+}
+
+.entanglement-examples h3 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 50px;
+  color: var(--quantum-light);
+}
+
+.examples-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.example-card {
+  text-align: center;
+  padding: 25px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.example-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  transition: left 0.6s ease;
+}
+
+.example-card:hover::before {
+  left: 100%;
+}
+
+.example-card.selected {
+  border-color: var(--quantum-accent);
+  box-shadow: 0 0 30px rgba(255, 255, 0, 0.3);
+}
+
+.example-icon {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 50%;
+  font-size: 24px;
+}
+
+.example-card h4 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: var(--quantum-light);
+}
+
+.example-card p {
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.6;
+  font-size: 0.9rem;
+}
+
+.entanglement-explanation {
+  margin-top: 80px;
+}
+
+.explanation-content {
+  padding: 40px;
+  text-align: center;
+}
+
+.explanation-content h3 {
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+  color: var(--quantum-primary);
+}
+
+.explanation-text {
+  margin-bottom: 30px;
+}
+
+.explanation-text p {
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.7;
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+.quantum-formula {
+  margin-top: 30px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+  border: 1px solid var(--quantum-primary);
+}
+
+.quantum-formula span {
+  display: block;
+  font-family: 'Orbitron', monospace;
+  font-size: 1.5rem;
+  color: var(--quantum-accent);
+  margin-bottom: 10px;
+}
+
+.quantum-formula small {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.9rem;
+}
+
+/* 响应式设计 */
+@media (max-width: 1024px) {
+  .entanglement-demo {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .entangled-particles {
+    gap: 20px;
+  }
+
+  .entanglement-line {
+    width: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .entanglement {
+    padding: 60px 0;
+  }
+
+  .entangled-particles {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .entanglement-line {
+    width: 4px;
+    height: 80px;
+  }
+
+  .line-core {
+    width: 100%;
+    height: 100%;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+  }
+
+  .wave {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) scaleY(0);
+  }
+
+  @keyframes wave-travel {
+    0% {
+      transform: translateX(-50%) scaleY(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(-50%) scaleY(1);
+      opacity: 0;
+    }
+  }
+
+  .examples-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .explanation-content {
+    padding: 30px 20px;
+  }
+}
