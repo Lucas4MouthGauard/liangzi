@@ -116,7 +116,7 @@ const Hero: React.FC = () => {
           <div className="pump-cat-container">
             <img 
               src="/PumpCat.png" 
-              alt="Pump Cat" 
+              alt="Quantum Cat" 
               className="pump-cat-image"
             />
             <button 
@@ -127,16 +127,8 @@ const Hero: React.FC = () => {
                   e.currentTarget.style.transform = 'translateX(-50%) scale(1)';
                 }, 150);
                 
-                // 跳转到PumpCat页面
-                setTimeout(() => {
-                  try {
-                    window.open('https://pump.fun/coin/7FRemyn52ij73m5Smyuxd6hkY7Tc6vazwB3rAR4hpump', '_blank');
-                  } catch (error) {
-                    console.log('Redirect failed:', error);
-                    // 备用方案：直接跳转
-                    window.location.href = 'https://pump.fun/coin/7FRemyn52ij73m5Smyuxd6hkY7Tc6vazwB3rAR4hpump';
-                  }
-                }, 200);
+                // 目前不可以跳转
+                console.log('BUY功能暂未开放');
               }}
             >
               BUY

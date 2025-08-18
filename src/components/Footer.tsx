@@ -19,7 +19,7 @@ const Footer: React.FC = () => {
           <div className="footer-section">
             <div className="footer-logo">
               <Zap className="logo-icon" />
-              <span className="logo-text">PumpCat</span>
+              <span className="logo-text">QuantumCat</span>
             </div>
             <div className="footer-description">
               <h3 className="description-title">Exploring the Wonderful World of Quantum Physics</h3>
@@ -50,7 +50,7 @@ const Footer: React.FC = () => {
           <div className="footer-divider"></div>
           <div className="footer-bottom-content">
             <p className="copyright">
-              © {currentYear} PumpCat. Made with <Heart className="heart-icon" /> ❤️
+              © {currentYear} QuantumCat. Made with <Heart className="heart-icon" /> ❤️
             </p>
             <p className="footer-note">
               This website is for educational and popular science purposes only and does not constitute any scientific advice.
