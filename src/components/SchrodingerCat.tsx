@@ -148,7 +148,7 @@ const SchrodingerCat: React.FC = () => {
               </div>
 
               <div className="experiment-status">
-                <h4>当前状态</h4>
+                <h4>Current Status</h4>
                 <p className="status-description">{getCatDescription()}</p>
               </div>
             </div>
@@ -164,24 +164,24 @@ const SchrodingerCat: React.FC = () => {
         >
           <div className="explanation-grid">
             <div className="explanation-item">
-              <h4>量子叠加</h4>
+              <h4>Quantum Superposition</h4>
               <p>
-                在观测之前，放射性原子处于衰变和未衰变的叠加态，
-                因此猫也处于活着和死亡的叠加态。
+                Before observation, the radioactive atom exists in a superposition of decayed and undecayed states,
+                therefore the cat also exists in a superposition of being alive and dead.
               </p>
             </div>
             <div className="explanation-item">
-              <h4>观测坍缩</h4>
+              <h4>Observation Collapse</h4>
               <p>
-                当我们打开盒子观测时，量子叠加态会瞬间坍缩到其中一个确定状态，
-                这就是著名的"波函数坍缩"。
+                When we open the box to observe, the quantum superposition state instantly collapses to one of the definite states,
+                this is the famous "wave function collapse."
               </p>
             </div>
             <div className="explanation-item">
-              <h4>现实意义</h4>
+              <h4>Real-world Significance</h4>
               <p>
-                这个思想实验揭示了量子世界与宏观世界的巨大差异，
-                以及观测行为在量子测量中的重要作用。
+                This thought experiment reveals the huge differences between the quantum world and the macroscopic world,
+                and the important role of observation behavior in quantum measurement.
               </p>
             </div>
           </div>

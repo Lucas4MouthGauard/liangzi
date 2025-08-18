@@ -94,15 +94,15 @@ const Hero: React.FC = () => {
           >
             <div className="stat-item">
               <span className="stat-number">∞</span>
-              <span className="stat-label">可能性</span>
+              <span className="stat-label">Probability</span>
             </div>
             <div className="stat-item">
               <span className="stat-number">50%</span>
-              <span className="stat-label">生死叠加</span>
+              <span className="stat-label">Life-Death Superposition</span>
             </div>
             <div className="stat-item">
               <span className="stat-number">⚛</span>
-              <span className="stat-label">量子态</span>
+              <span className="stat-label">Quantum State</span>
             </div>
           </motion.div>
         </motion.div>
@@ -156,7 +156,7 @@ const Hero: React.FC = () => {
         whileTap={{ scale: 0.9 }}
       >
         <ArrowDown className="scroll-icon" />
-        <span>向下滚动</span>
+                        <span>Scroll Down</span>
       </motion.button>
     </section>
   )

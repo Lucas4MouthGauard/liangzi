@@ -212,7 +212,7 @@ const Entanglement: React.FC = () => {
           transition={{ duration: 0.8, delay: 0.4 }}
           viewport={{ once: true }}
         >
-          <h3>量子纠缠的应用与意义</h3>
+          <h3>Applications and Significance of Quantum Entanglement</h3>
           <div className="examples-grid">
             {examples.map((example, index) => (
               <motion.div
@@ -246,20 +246,20 @@ const Entanglement: React.FC = () => {
           viewport={{ once: true }}
         >
           <div className="explanation-content quantum-card">
-            <h3>为什么量子纠缠如此重要？</h3>
+            <h3>Why is Quantum Entanglement So Important?</h3>
             <div className="explanation-text">
               <p>
-                量子纠缠挑战了我们对现实的基本理解。它表明，在量子尺度上，
-                两个物体可以形成一个不可分割的整体，即使它们在空间上分离。
+                Quantum entanglement challenges our fundamental understanding of reality. It shows that at the quantum scale,
+                two objects can form an inseparable whole, even when they are spatially separated.
               </p>
               <p>
-                这种现象在量子计算、量子通信和量子密码学中有着重要应用。
-                它也是理解量子力学基础的关键，帮助我们探索宇宙最深层的奥秘。
+                This phenomenon has important applications in quantum computing, quantum communication, and quantum cryptography.
+                It is also key to understanding the foundations of quantum mechanics, helping us explore the deepest mysteries of the universe.
               </p>
             </div>
             <div className="quantum-formula">
               <span>|ψ⟩ = (|↑↓⟩ - |↓↑⟩)/√2</span>
-              <small>贝尔态：最基本的双粒子纠缠态</small>
+              <small>Bell State: The most basic two-particle entangled state</small>
             </div>
           </div>
         </motion.div>

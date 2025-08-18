@@ -29,7 +29,7 @@ function App() {
           <div className="quantum-orb"></div>
           <div className="quantum-orb"></div>
         </div>
-        <h2 className="quantum-text">量子态加载中...</h2>
+        <h2 className="quantum-text">Loading Quantum State...</h2>
       </div>
     )
   }

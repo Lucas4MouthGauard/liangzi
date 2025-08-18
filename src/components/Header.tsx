@@ -55,7 +55,7 @@ const Header: React.FC = () => {
         <button 
           className="menu-toggle"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
-          aria-label="切换菜单"
+          aria-label="Toggle Menu"
         >
           {isMenuOpen ? <X /> : <Menu />}
         </button>

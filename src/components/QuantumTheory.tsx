@@ -47,7 +47,7 @@ const QuantumTheory: React.FC = () => {
           </h2>
           <p className="section-description">
             Quantum mechanics is the foundation of modern physics, describing the wonderful phenomena in the microscopic world.
-            Let's understand these concepts that颠覆常识 together.
+            Let's understand these concepts thatchallenge common sense together.
           </p>
         </motion.div>
 
@@ -83,7 +83,7 @@ const QuantumTheory: React.FC = () => {
                   
                   <div className="concept-details">
                     <div className="detail-item">
-                      <span className="detail-label">重要性</span>
+                      <span className="detail-label">Importance</span>
                       <div className="importance-bar">
                         <div 
                           className="importance-fill" 
@@ -96,7 +96,7 @@ const QuantumTheory: React.FC = () => {
                     </div>
                     
                     <div className="detail-item">
-                      <span className="detail-label">理解难度</span>
+                      <span className="detail-label">Difficulty</span>
                       <div className="difficulty-stars">
                         {[...Array(3)].map((_, i) => (
                           <span 
@@ -127,7 +127,7 @@ const QuantumTheory: React.FC = () => {
             <h3>Why is the Quantum World So Strange?</h3>
             <p>
               In the macroscopic world, we're used to determinism: an object is either here or there;
-              either alive or dead. But at the quantum scale, these common senses are completely颠覆常识.
+              either alive or dead. But at the quantum scale, these common senses are completelychallenge common sense.
             </p>
             <p>
               Quantum mechanics tells us that before observation, particles can exist in multiple positions simultaneously,

@@ -50,10 +50,10 @@ const Footer: React.FC = () => {
           <div className="footer-divider"></div>
           <div className="footer-bottom-content">
             <p className="copyright">
-              © {currentYear} 量子猫. 用 <Heart className="heart-icon" /> 制作
+              © {currentYear} PumpCat. Made with <Heart className="heart-icon" /> ❤️
             </p>
             <p className="footer-note">
-              本网站仅用于教育和科普目的，不构成任何科学建议。
+              This website is for educational and popular science purposes only and does not constitute any scientific advice.
             </p>
           </div>
         </motion.div>
