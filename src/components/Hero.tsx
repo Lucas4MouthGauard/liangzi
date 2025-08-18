@@ -122,7 +122,6 @@ const Hero: React.FC = () => {
             <button 
               className="buy-button"
               onClick={(e) => {
-                // 动画效果
                 e.currentTarget.style.transform = 'translateX(-50%) scale(0.95)';
                 setTimeout(() => {
                   e.currentTarget.style.transform = 'translateX(-50%) scale(1)';
@@ -133,7 +132,7 @@ const Hero: React.FC = () => {
                   try {
                     window.open('https://pump.fun/coin/7FRemyn52ij73m5Smyuxd6hkY7Tc6vazwB3rAR4hpump', '_blank');
                   } catch (error) {
-                    console.log('跳转失败:', error);
+                    console.log('Redirect failed:', error);
                     // 备用方案：直接跳转
                     window.location.href = 'https://pump.fun/coin/7FRemyn52ij73m5Smyuxd6hkY7Tc6vazwB3rAR4hpump';
                   }
