@@ -13,6 +13,7 @@
 - **动画同步**: 跟随图片一起跳动
 - **交互效果**: 点击时有缩放反馈，跳转到PumpCat页面
 - **跳转链接**: https://pump.fun/coin/7FRemyn52ij73m5Smyuxd6hkY7Tc6vazwB3rAR4hpump
+- **错误处理**: 添加了try-catch和备用跳转方案
 
 ### 3. 🖼️ 更换主页图片和网站图标
 
@@ -37,7 +38,7 @@
 #### 功能调整
 - **移除**: 主页的"Follow @Pump_Cat_meme"按钮
 - **新增**: 导航栏中的X按钮（位于"互动演示"后）
-- **链接地址**: https://x.com/Pump_Cat_meme
+- **链接地址**: https://x.com/PumpCat_dev
 - **按钮样式**: 圆形Twitter蓝色渐变，带有X图标
 - **功能**: 点击在新标签页打开Twitter页面
 
