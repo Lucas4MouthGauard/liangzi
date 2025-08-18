@@ -10,20 +10,20 @@ const InteractiveDemo: React.FC = () => {
 
   const demoSteps = [
     {
-      title: '准备量子比特',
-      description: '创建两个处于叠加态的量子比特',
+      title: 'Prepare Qubits',
+      description: 'Create two qubits in superposition states',
       icon: <Brain />,
       duration: 2000
     },
     {
-      title: '应用量子门',
-      description: '使用Hadamard门和CNOT门创建纠缠态',
+      title: 'Apply Quantum Gates',
+      description: 'Use Hadamard and CNOT gates to create entanglement',
       icon: <Zap />,
       duration: 3000
     },
     {
-      title: '测量结果',
-      description: '测量量子比特，观察纠缠效应',
+      title: 'Measure Results',
+      description: 'Measure qubits and observe entanglement effects',
       icon: <Eye />,
       duration: 2000
     }
@@ -71,12 +71,12 @@ const InteractiveDemo: React.FC = () => {
           viewport={{ once: true }}
         >
           <h2 className="section-title">
-            <span className="quantum-text">互动演示</span>
-            <span className="title-sub">体验量子计算</span>
+            <span className="quantum-text">Interactive Demo</span>
+            <span className="title-sub">Experience Quantum Computing</span>
           </h2>
           <p className="section-description">
-            通过这个互动演示，你可以亲身体验量子比特的创建、操作和测量过程。
-            观察量子叠加和纠缠的奇妙现象。
+            Through this interactive demo, you can personally experience the process of creating, operating, and measuring qubits.
+            Observe the wonderful phenomena of quantum superposition and entanglement.
           </p>
         </motion.div>
 
@@ -90,7 +90,7 @@ const InteractiveDemo: React.FC = () => {
           >
             <div className="quantum-circuit quantum-card">
               <div className="circuit-header">
-                <h3>量子电路演示</h3>
+                <h3>Quantum Circuit Demo</h3>
                 <div className="circuit-controls">
                   <button
                     className={`control-btn ${isPlaying ? 'active' : ''}`}
@@ -142,7 +142,7 @@ const InteractiveDemo: React.FC = () => {
             viewport={{ once: true }}
           >
             <div className="control-panel quantum-card">
-              <h3>演示控制</h3>
+              <h3>Demo Control</h3>
               
               <div className="demo-buttons">
                 <button
@@ -150,27 +150,27 @@ const InteractiveDemo: React.FC = () => {
                   onClick={isPlaying ? pauseDemo : startDemo}
                 >
                   {isPlaying ? <Pause className="btn-icon" /> : <Play className="btn-icon" />}
-                  {isPlaying ? '暂停' : '开始演示'}
+                  {isPlaying ? 'Pause' : 'Start Demo'}
                 </button>
                 
                 <button className="quantum-btn secondary" onClick={resetDemo}>
                   <RotateCcw className="btn-icon" />
-                  重置
+                  Reset
                 </button>
               </div>
 
               <div className="demo-info">
-                <h4>当前状态</h4>
+                <h4>Current Status</h4>
                 <p>
                   {isPlaying 
-                    ? `正在执行: ${demoSteps[currentStep]?.title}`
-                    : '演示已停止，点击开始按钮开始体验'
+                    ? `Executing: ${demoSteps[currentStep]?.title}`
+                    : 'Demo stopped, click start button to begin experience'
                   }
                 </p>
               </div>
 
               <div className="step-list">
-                <h4>演示步骤</h4>
+                <h4>Demo Steps</h4>
                 <ul>
                   {demoSteps.map((step, index) => (
                     <li 

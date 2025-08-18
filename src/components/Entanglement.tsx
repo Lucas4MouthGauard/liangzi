@@ -8,26 +8,26 @@ const Entanglement: React.FC = () => {
 
   const examples = [
     {
-      title: 'EPR佯谬',
-      description: '爱因斯坦、波多尔斯基和罗森提出的思想实验，质疑量子力学的完备性。',
+      title: 'EPR Paradox',
+      description: 'A thought experiment proposed by Einstein, Podolsky, and Rosen, questioning the completeness of quantum mechanics.',
       icon: <Brain />,
       color: 'var(--quantum-primary)'
     },
     {
-      title: '贝尔不等式',
-      description: '约翰·贝尔提出的数学不等式，用于检验量子力学与隐变量理论。',
+      title: 'Bell Inequality',
+      description: 'A mathematical inequality proposed by John Bell, used to test quantum mechanics against hidden variable theories.',
       icon: <Zap />,
       color: 'var(--quantum-secondary)'
     },
     {
-      title: '量子通信',
-      description: '利用量子纠缠实现超光速信息传递，虽然不能传递经典信息。',
+      title: 'Quantum Communication',
+      description: 'Using quantum entanglement to achieve faster-than-light information transmission, though classical information cannot be transmitted.',
       icon: <Globe />,
       color: 'var(--quantum-accent)'
     },
     {
-      title: '量子计算',
-      description: '量子比特的纠缠特性是量子计算优越性的核心。',
+      title: 'Quantum Computing',
+      description: 'The entanglement properties of qubits are the core of quantum computing superiority.',
       icon: <Rocket />,
       color: 'var(--quantum-primary)'
     }
