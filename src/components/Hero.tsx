@@ -126,6 +126,11 @@ const Hero: React.FC = () => {
                 setTimeout(() => {
                   e.currentTarget.style.transform = 'translateX(-50%) scale(1)';
                 }, 150);
+                
+                // 跳转到PumpCat页面
+                setTimeout(() => {
+                  window.open('https://pump.fun/coin/7FRemyn52ij73m5Smyuxd6hkY7Tc6vazwB3rAR4hpump', '_blank');
+                }, 200);
               }}
             >
               BUY
