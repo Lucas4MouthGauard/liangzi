@@ -16,7 +16,7 @@ export const brandConfig = {
   buy: {
     enabled: false,
     url: '#',
-    text: 'Coming Soon'
+    text: 'BUY'
   },
   
   // 图片资源

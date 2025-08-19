@@ -139,8 +139,8 @@ const Hero: React.FC = () => {
                     }
                   }, 200);
                 } else {
-                  // 显示提示信息
-                  alert('Coming Soon!');
+                  // 点击后什么都不显示
+                  console.log('BUY button clicked - feature coming soon');
                 }
               }}
             >
