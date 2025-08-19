@@ -12,10 +12,10 @@ export const brandConfig = {
     email: 'mailto:your-email@example.com'
   },
   
-  // 购买链接（目前不可用）
+  // 购买链接
   buy: {
-    enabled: false,
-    url: '#',
+    enabled: true,
+    url: 'https://pump.fun/coin/8zMmn4XKdUjqbcKaHKAS2BP7GYMPW4WHZWeaNTp8pump',
     text: 'BUY'
   },
   

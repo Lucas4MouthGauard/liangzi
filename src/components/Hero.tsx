@@ -128,7 +128,7 @@ const Hero: React.FC = () => {
                   e.currentTarget.style.transform = 'translateX(-50%) scale(1)';
                 }, 150);
                 
-                // 购买链接目前不可用
+                // 处理购买链接
                 if (brandConfig.buy.enabled) {
                   setTimeout(() => {
                     try {
