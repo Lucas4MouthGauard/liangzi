@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react'
 import { motion } from 'framer-motion'
 import { ArrowDown, Zap, Atom, Eye } from 'lucide-react'
+import { brandConfig } from '../config/brand'
 import './Hero.css'
 
 const Hero: React.FC = () => {
@@ -113,11 +114,11 @@ const Hero: React.FC = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1.2, delay: 1.2 }}
         >
-          <div className="pump-cat-container">
+          <div className="brand-cat-container">
             <img 
-              src="/PumpCat.png" 
-              alt="Quantum Cat" 
-              className="pump-cat-image"
+              src={brandConfig.images.logo} 
+              alt={brandConfig.name} 
+              className="brand-cat-image"
             />
             <button 
               className="buy-button"
@@ -127,11 +128,23 @@ const Hero: React.FC = () => {
                   e.currentTarget.style.transform = 'translateX(-50%) scale(1)';
                 }, 150);
                 
-                // 目前不可以跳转
-                console.log('BUY功能暂未开放');
+                // 购买链接目前不可用
+                if (brandConfig.buy.enabled) {
+                  setTimeout(() => {
+                    try {
+                      window.open(brandConfig.buy.url, '_blank');
+                    } catch (error) {
+                      console.log('Redirect failed:', error);
+                      window.location.href = brandConfig.buy.url;
+                    }
+                  }, 200);
+                } else {
+                  // 显示提示信息
+                  alert('Coming Soon!');
+                }
               }}
             >
-              BUY
+              {brandConfig.buy.text}
             </button>
             <div className="quantum-particles">
               {[...Array(12)].map((_, i) => (

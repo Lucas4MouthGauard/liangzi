@@ -156,7 +156,7 @@
   position: relative;
 }
 
-.pump-cat-container {
+.brand-cat-container {
   position: relative;
   width: 300px;
   height: 300px;
@@ -166,16 +166,16 @@
   margin-bottom: 80px;
 }
 
-.pump-cat-image {
+.brand-cat-image {
   width: 250px;
   height: 250px;
   object-fit: contain;
   border-radius: 50%;
   box-shadow: 0 0 30px rgba(0, 212, 255, 0.3);
-  animation: pump-cat-float 3s ease-in-out infinite;
+  animation: brand-cat-float 3s ease-in-out infinite;
 }
 
-@keyframes pump-cat-float {
+@keyframes brand-cat-float {
   0%, 100% { transform: translateY(0) scale(1); }
   50% { transform: translateY(-10px) scale(1.05); }
 }
@@ -408,7 +408,7 @@
     justify-content: center;
   }
 
-  .pump-cat-container {
+  .brand-cat-container {
     width: 250px;
     height: 250px;
   }
@@ -440,7 +440,7 @@
     font-size: 1.5rem;
   }
 
-  .pump-cat-container {
+  .brand-cat-container {
     width: 200px;
     height: 200px;
   }
