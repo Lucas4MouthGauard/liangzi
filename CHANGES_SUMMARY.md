@@ -168,3 +168,51 @@
 - 🧹 简化的Footer设计
 - 🌍 完整的英文版本
 - ✨ 更好的用户体验
+
+# 更新总结
+
+## 最新更新 (2024-12-19)
+
+### 🎯 品牌更换：PumpCat → BreadCat
+- **品牌名称**: 从 "PumpCat" 更换为 "BreadCat"
+- **图片资源**: PumpCat.png 重命名为 BreadCat.png
+- **网站标题**: 更新为 "BreadCat From QuantumLabs"
+- **网站图标**: 更换为 BreadCat.png
+
+### 🔗 链接更新
+- **Twitter链接**: 更新为 https://x.com/BreadCat_meme
+- **BUY按钮**: 目前不可用，显示 "Coming Soon" 提示
+
+### ⚙️ 新增功能：品牌配置系统
+- **配置文件**: 新增 `src/config/brand.ts` 品牌配置文件
+- **快速更换**: 通过修改配置文件即可快速更换整个网站品牌
+- **集中管理**: 所有品牌相关信息集中在一个文件中
+- **说明文档**: 添加了详细的使用说明文档
+
+### 🎨 代码优化
+- **CSS类名**: 将 `pump-cat-*` 类名优化为 `brand-cat-*`，更加通用
+- **组件重构**: 所有组件现在使用配置文件中的品牌信息
+- **类型安全**: 使用TypeScript确保配置的正确性
+
+### 📁 文件结构
+```
+src/config/
+├── brand.ts          # 品牌配置文件
+└── README.md         # 配置使用说明
+```
+
+### 🚀 使用方法
+1. 修改 `src/config/brand.ts` 中的配置项
+2. 保存文件后网站自动更新
+3. 如需更换图片，将新图片放在 `public/` 目录并更新配置
+
+### 📝 配置项说明
+- `name`: 品牌名称
+- `social.twitter`: Twitter链接
+- `buy.enabled`: 是否启用购买功能
+- `images.logo`: 品牌图片路径
+- `title`: 网站标题
+
+---
+
+## 历史更新记录
