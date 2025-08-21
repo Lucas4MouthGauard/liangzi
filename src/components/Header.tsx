@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import { Menu, X, Zap } from 'lucide-react'
-import { brandConfig } from '../config/brand'
 import './Header.css'
 
 const Header: React.FC = () => {
@@ -29,7 +28,7 @@ const Header: React.FC = () => {
       <div className="header-container">
         <div className="logo" onClick={() => scrollToSection('hero')}>
           <Zap className="logo-icon" />
-          <span className="logo-text">{brandConfig.name}</span>
+          <span className="logo-text">PumpCat</span>
         </div>
 
                   <nav className={`nav ${isMenuOpen ? 'open' : ''}`}>
@@ -40,7 +39,7 @@ const Header: React.FC = () => {
             <li><button onClick={() => scrollToSection('interactive-demo')}>Interactive Demo</button></li>
             <li>
               <a 
-                href={brandConfig.social.twitter} 
+                href="https://x.com/BreadAndCat_sol" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="nav-x-button"

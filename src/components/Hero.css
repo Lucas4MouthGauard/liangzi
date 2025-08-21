@@ -156,7 +156,7 @@
   position: relative;
 }
 
-.brand-cat-container {
+.pump-cat-container {
   position: relative;
   width: 300px;
   height: 300px;
@@ -166,16 +166,16 @@
   margin-bottom: 80px;
 }
 
-.brand-cat-image {
+.pump-cat-image {
   width: 250px;
   height: 250px;
   object-fit: contain;
   border-radius: 50%;
   box-shadow: 0 0 30px rgba(0, 212, 255, 0.3);
-  animation: brand-cat-float 3s ease-in-out infinite;
+  animation: pump-cat-float 3s ease-in-out infinite;
 }
 
-@keyframes brand-cat-float {
+@keyframes pump-cat-float {
   0%, 100% { transform: translateY(0) scale(1); }
   50% { transform: translateY(-10px) scale(1.05); }
 }
@@ -215,6 +215,25 @@
 .buy-button:focus {
   outline: none;
   box-shadow: 0 0 0 3px rgba(29, 161, 242, 0.3);
+}
+
+.buy-button.disabled {
+  background: linear-gradient(90deg, #666666 0%, #444444 100%);
+  color: #999999;
+  cursor: not-allowed;
+  opacity: 0.6;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
+}
+
+.buy-button.disabled:hover {
+  transform: translateX(-50%);
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(90deg, #666666 0%, #444444 100%);
+}
+
+.buy-button.disabled:active {
+  transform: translateX(-50%);
+  background: linear-gradient(90deg, #666666 0%, #444444 100%);
 }
 
 .cat-body {
@@ -408,7 +427,7 @@
     justify-content: center;
   }
 
-  .brand-cat-container {
+  .pump-cat-container {
     width: 250px;
     height: 250px;
   }
@@ -440,7 +459,7 @@
     font-size: 1.5rem;
   }
 
-  .brand-cat-container {
+  .pump-cat-container {
     width: 200px;
     height: 200px;
   }
