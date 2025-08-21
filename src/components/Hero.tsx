@@ -115,8 +115,8 @@ const Hero: React.FC = () => {
         >
           <div className="pump-cat-container">
             <img 
-              src="/PumpCat.png" 
-              alt="Pump Cat" 
+              src="/BreadCat.png" 
+              alt="Bread Cat" 
               className="pump-cat-image"
             />
             <button 
