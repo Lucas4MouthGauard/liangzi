@@ -1,13 +1,13 @@
 export const brandConfig = {
   // 品牌名称
-  name: 'BreadCat',
+  name: 'SchroCat',
   
   // 品牌描述
   description: 'Exploring the Wonderful World of Quantum Physics',
   
   // 社交媒体链接
   social: {
-    twitter: 'https://x.com/Bread_Cat_meme',
+    twitter: 'https://x.com/SchroCat_meme',
     github: 'https://github.com/your-username',
     email: 'mailto:your-email@example.com'
   },
@@ -21,15 +21,15 @@ export const brandConfig = {
   
   // 图片资源
   images: {
-    logo: '/BreadCat.png',
-    favicon: '/BreadCat.png'
+    logo: '/SchroCat.png',
+    favicon: '/SchroCat.png'
   },
   
   // 网站标题
-  title: 'BreadCat From QuantumLabs',
+  title: 'SchroCat From QuantumLabs',
   
   // 版权信息
-  copyright: 'BreadCat'
+  copyright: 'SchroCat'
 }
 
 export default brandConfig
