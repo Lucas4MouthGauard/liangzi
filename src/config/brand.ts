@@ -7,15 +7,15 @@ export const brandConfig = {
   
   // 社交媒体链接
   social: {
-    twitter: 'https://x.com/BreadCat_meme',
+    twitter: 'https://x.com/Bread_Cat_meme',
     github: 'https://github.com/your-username',
     email: 'mailto:your-email@example.com'
   },
   
-  // 购买链接
+  // 购买链接（目前不可用）
   buy: {
-    enabled: true,
-    url: 'https://pump.fun/coin/8zMmn4XKdUjqbcKaHKAS2BP7GYMPW4WHZWeaNTp8pump',
+    enabled: false,
+    url: '#',
     text: 'BUY'
   },
   
