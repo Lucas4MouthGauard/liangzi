@@ -38,7 +38,7 @@
 #### 功能调整
 - **移除**: 主页的"Follow @Pump_Cat_meme"按钮
 - **新增**: 导航栏中的X按钮（位于"互动演示"后）
-- **链接地址**: https://x.com/breadcat_fyi
+- **链接地址**: https://x.com/boxcat_meme
 - **按钮样式**: 圆形Twitter蓝色渐变，带有X图标
 - **功能**: 点击在新标签页打开Twitter页面
 
