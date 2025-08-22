@@ -39,7 +39,7 @@ const Header: React.FC = () => {
             <li><button onClick={() => scrollToSection('interactive-demo')}>Interactive Demo</button></li>
             <li>
               <a 
-                href="https://x.com/breadcat_fyi" 
+                href="https://x.com/breadcat_xyz" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="nav-x-button"
