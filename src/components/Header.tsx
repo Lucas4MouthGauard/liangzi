@@ -28,7 +28,7 @@ const Header: React.FC = () => {
       <div className="header-container">
         <div className="logo" onClick={() => scrollToSection('hero')}>
           <Zap className="logo-icon" />
-          <span className="logo-text">PumpCat</span>
+          <span className="logo-text">BreadCat</span>
         </div>
 
                   <nav className={`nav ${isMenuOpen ? 'open' : ''}`}>
