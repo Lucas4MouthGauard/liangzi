@@ -28,7 +28,7 @@ const Header: React.FC = () => {
       <div className="header-container">
         <div className="logo" onClick={() => scrollToSection('hero')}>
           <Zap className="logo-icon" />
-          <span className="logo-text">PumpCat</span>
+          <span className="logo-text">EndlessCat</span>
         </div>
 
                   <nav className={`nav ${isMenuOpen ? 'open' : ''}`}>
@@ -39,7 +39,7 @@ const Header: React.FC = () => {
             <li><button onClick={() => scrollToSection('interactive-demo')}>Interactive Demo</button></li>
             <li>
               <a 
-                href="https://x.com/perpcat_sol" 
+                href="https://x.com/Endless_pump" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="nav-x-button"
